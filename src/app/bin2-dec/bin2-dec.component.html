@@ -1,3 +1,6 @@
-<input type="text" [(ngModel)]="binaryNumber"> {{decimalNumber}}
-<br>
-<span *ngIf="error">Not recognized</span>
+<mat-form-field>
+    <input matInput placeholder="Binary Number" type="text" [(ngModel)]="binaryNumber">
+   
+</mat-form-field>
+<span>Result : {{decimalNumber}} </span>
+<mat-error *ngIf="error">Not recognized</mat-error>

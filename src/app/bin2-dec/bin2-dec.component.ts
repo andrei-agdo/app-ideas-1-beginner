@@ -18,7 +18,7 @@ export class Bin2DecComponent implements OnInit {
   }
 
   get decimalNumber() {
-
+    
     let _notBinaryNumber = new RegExp('[^0,1]');
 
     if (_notBinaryNumber.test(this.binaryNumber)) this.error = true;
@@ -34,7 +34,7 @@ export class Bin2DecComponent implements OnInit {
         _decimalNumber += parseInt(this.binaryNumber[i - 1]) * counter;
         counter *= 2;
       }
-      
+
       return _decimalNumber;
 
     }
